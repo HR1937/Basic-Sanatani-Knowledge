@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Ecology in Sanatan Dharma: Divine Connection with Nature</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-light: #60ad5e;
+            --primary-dark: #005005;
+            --secondary: #ffd54f;
+            --secondary-light: #ffff81;
+            --secondary-dark: #c8a415;
+            --accent: #e91e63;
+            --text-light: #f5f5f5;
+            --text-dark: #212121;
+            --background-light: #f8f9fa;
+            --background-cream: #fff8e1;
+            --background-gradient: linear-gradient(135deg, #81c784, #4caf50);
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.12);
+            --shadow-lg: 0 8px 16px rgba(0,0,0,0.15);
+            --border-radius: 8px;
+            --transition-normal: all 0.3s ease;
+            --transition-slow: all 0.5s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--background-light);
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .header {
+            background:  
+                        url('https://i.ytimg.com/vi/2OUWHWUeycc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDTAb2Aiazw8qA24lYNKNVy5Yx6rA');
+            background-size: cover;
+            background-position:center -320px;
+            background-attachment: fixed;
+            /* color: white; */
+            text-align: center;
+            padding: 6rem 2rem;
+            position: relative;
+        }
+        .glow-text {
+            color: white;
+            text-shadow: 0 0 5px black, 0 0 50px black, 0 0 50px #00ffff;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); */
+            /* opacity: 0.2; */
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 1.2s ease;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .header-divider {
+            width: 150px;
+            height: 4px;
+            background: var(--secondary);
+            margin: 1.5rem auto;
+            border-radius: 2px;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: var(--primary);
+            padding: 0.8rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.2);
+            transition: var(--transition-normal);
+            z-index: -1;
+        }
+
+        .nav a:hover::before {
+            left: 0;
+        }
+
+        .nav a:hover {
+            background-color: var(--secondary);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        /* Main Content Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            margin: 3rem 0;
+            padding: 2.5rem;
+            transition: var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--primary);
+            transition: var(--transition-normal);
+        }
+
+        .section:hover::before {
+            width: 10px;
+        }
+
+        .section-title {
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--secondary);
+            display: inline-block;
+            font-size: 1.8rem;
+        }
+
+        /* Radha Krishna Section */
+        .deity-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .deity-image {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .deity-image img {
+            width: 100%;
+            display: block;
+            transition: var(--transition-slow);
+        }
+
+        .deity-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .deity-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3));
+            opacity: 0;
+            transition: var(--transition-normal);
+        }
+
+        .deity-image:hover::after {
+            opacity: 1;
+        }
+
+        .deity-content {
+            padding: 1rem;
+        }
+
+        .deity-content h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+
+        /* Mantra Box */
+        .mantra-box {
+            background: var(--background-cream);
+            border: 2px solid var(--secondary);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
+        }
+
+        .mantra-box:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+        }
+
+        .mantra-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,213,79,0.2) 0%, rgba(255,213,79,0) 70%);
+            animation: rotate 20s linear infinite;
+            z-index: 0;
+        }
+
+        .mantra-box-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .mantra-text {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin: 1.5rem 0;
+            color: var(--primary-dark);
+        }
+
+        /* Accordion Styles */
+        .accordion {
+            margin-bottom: 1.5rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
+        }
+
+        .accordion:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .accordion-header {
+            background: var(--primary-light);
+            color: white;
+            padding: 1.2rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: var(--transition-normal);
+        }
+
+        .accordion-header:hover {
+            background: var(--primary);
+        }
+
+        .accordion-header h3 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .accordion-header .icon {
+            transition: var(--transition-normal);
+        }
+
+        .accordion.active .accordion-header .icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            background: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .accordion-body {
+            padding: 1.5rem;
+        }
+
+        .scripture-ref {
+            display: block;
+            color: var(--primary);
+            font-style: italic;
+            margin-top: 1rem;
+            padding-top: 0.5rem;
+            border-top: 1px dashed var(--primary-light);
+        }
+
+        /* Quiz Section */
+        .quiz-container {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .question-box {
+            background: var(--background-light);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+            transition: var(--transition-normal);
+        }
+
+        .question-box:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .question-box p {
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .option-label {
+            display: block;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition-normal);
+            background: rgba(0,0,0,0.03);
+        }
+
+        .option-label:hover {
+            background: rgba(0,0,0,0.06);
+        }
+
+        .option-label input {
+            margin-right: 10px;
+        }
+
+        /* Buttons */
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: var(--transition-normal);
+            display: inline-block;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--secondary);
+            color: var(--text-dark);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary-dark);
+        }
+
+        .btn-large {
+            padding: 1.2rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Result Box */
+        .result-box {
+            display: none;
+            background: var(--background-cream);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            border: 2px solid var(--secondary);
+            animation: fadeIn 0.5s ease;
+        }
+
+        .result-score {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            color: var(--primary-dark);
+        }
+
+        .result-message {
+            margin-bottom: 1rem;
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-normal);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-slow);
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.1);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+
+        .card-text {
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-mantra {
+            font-size: 1.3rem;
+            margin: 1.5rem 0;
+            color: var(--secondary);
+        }
+
+        .footer-quote {
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Audio message */
+        .audio-message {
+            background: var(--secondary-light);
+            color: var(--primary-dark);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        /* Permission overlay */
+        .permission-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .permission-box {
+            background-color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .permission-box h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .permission-box p {
+            margin-bottom: 1.5rem;
+        }
+
+        .permission-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from { 
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .deity-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 2rem 1.5rem;
+            }
+            
+            .header {
+                padding: 4rem 1.5rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+            
+            .nav-container.active {
+                max-height: 300px;
+            }
+            
+            .nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .nav a {
+                width: 100%;
+                text-align: center;
+                margin: 0.3rem 0;
+            }
+            
+            .mantra-text {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .section {
+                padding: 1.5rem 1rem;
+                margin: 2rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content glow-text">
+            <h1>🌿 Sacred Ecology in Sanatan Dharma 🌿</h1>
+            <div class="header-divider"></div>
+            <p>Exploring the Divine Connection Between Spirituality and Environmental Conservation</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <button class="mobile-menu-toggle">☰ Menu</button>
+        <div class="nav-container">
+            <a href="#radhakrishna">Rādhā-Kṛṣṇa</a>
+            <a href="#gaumata">Gau Mata</a>
+            <a href="#tulsi">Tulsi Maharani</a>
+            <a href="#elements">Sacred Elements</a>
+            <a href="#quiz">Knowledge Quiz</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Radha Krishna Section -->
+        <section id="radhakrishna" class="section">
+            <h2 class="section-title">Śrī Rādhā-Kṛṣṇa: The Divine Source of Creation</h2>
+            
+            <div class="deity-section">
+                <div class="deity-image">
+                    <img src="https://i.pinimg.com/736x/32/c4/40/32c440940d9c206145192dc271f9fef4.jpg" alt="Radha Krishna">
+                </div>
+                <div class="deity-content">
+                    <h3>The Supreme Divine Couple</h3>
+                    <p>Lord Kṛṣṇa is the Supreme Personality of Godhead, the source of all creation, maintenance, and dissolution. As declared in the Bhagavad Gītā (10.8), "I am the source of all spiritual and material worlds. Everything emanates from Me."</p>
+                    
+                    <p>Śrīmatī Rādhārāṇī is the supreme goddess and the internal pleasure potency (hlādinī-śakti) of Lord Kṛṣṇa. Together, they represent the perfect balance of divine masculine and feminine energies that sustain the cosmos.</p>
+                    
+                    <p>The Brahma-saṁhitā (5.1) describes Lord Kṛṣṇa as "īśvaraḥ paramaḥ kṛṣṇaḥ" - the supreme controller and the cause of all causes. His divine consort Rādhā embodies pure devotional service and unconditional love.</p>
+                </div>
+            </div>
+            
+            <div class="mantra-box">
+                <div class="mantra-box-content">
+                    <h3>✨ The Mahā-Mantra: Divine Sound Vibration ✨</h3>
+                    <p class="mantra-text">
+                        Hare Kṛṣṇa Hare Kṛṣṇa<br>
+                        Kṛṣṇa Kṛṣṇa Hare Hare<br>
+                        Hare Rāma Hare Rāma<br>
+                        Rāma Rāma Hare Hare
+                    </p>
+                    <button id="playMantra" class="btn btn-secondary">🎵 Play Mantra</button>
+                    <div id="audioMessage" class="audio-message" style="display: none;"></div>
+                </div>
+            </div>
+            
+            <h3>Why Worship Rādhā-Kṛṣṇa?</h3>
+            <ul>
+                <li><strong>Divine Love:</strong> They exemplify the highest form of love (prema) that transcends material attachments.</li>
+                <li><strong>Cosmic Balance:</strong> They represent the perfect harmony between all opposing forces in nature.</li>
+                <li><strong>Environmental Consciousness:</strong> Lord Kṛṣṇa's pastimes demonstrate deep reverence for nature, animals, and the environment.</li>
+                <li><strong>Spiritual Ecology:</strong> Their teachings emphasize living in harmony with nature rather than exploiting it.</li>
+            </ul>
+            
+            <h3>The Importance of Chanting the Mahā-Mantra</h3>
+            <p>The Kali-santaraṇa Upaniṣad declares the Hare Kṛṣṇa mahā-mantra as the supreme means of liberation in this age of Kali. Chanting this mantra:</p>
+            <ul>
+                <li>Cleanses the heart of material desires that lead to environmental exploitation</li>
+                <li>Awakens our dormant love for God and all living beings</li>
+                <li>Creates positive vibrations that benefit the entire ecosystem</li>
+                <li>Connects us with divine consciousness, promoting compassion for all creatures</li>
+            </ul>
+            
+            <div class="scripture-ref">
+                "In this Age of Kali, there is no other means, no other means, no other means for self-realization than chanting the holy name, chanting the holy name, chanting the holy name of Lord Hari (Kṛṣṇa)." — Bṛhan-nāradīya Purāṇa (38.126)
+            </div>
+        </section>
+        
+        <!-- Gau Mata Section -->
+        <section id="gaumata" class="section">
+            <h2 class="section-title">Gau Mata: The Divine Mother Cow</h2>
+            
+            <div class="deity-section">
+                <div class="deity-content">
+                    <h3>The Sacred Status of Cows in Sanatan Dharma</h3>
+                    <p>In Sanatan Dharma, the cow is revered as Gau Mata (Mother Cow), symbolizing the divine qualities of selfless giving, nourishment, and purity. The Vedas and Puranas contain numerous references to the sacred status of cows.</p>
+                    
+                    <p>The Atharvaveda (9.10.20) states: "The cow is Heaven, the cow is Earth, the cow is Vishnu, Lord of Life." This indicates that the cow represents the entire cosmos and divine principles.</p>
+                    
+                    <p>Lord Kṛṣṇa Himself appeared as Gopala (the protector of cows) and demonstrated special affection for cows during His earthly pastimes. In the Bhagavad Gītā (18.44), protection of cows is specifically mentioned as a duty.</p>
+                    
+                    <h3>Why Cows Are Considered Divine</h3>
+                    <ul>
+                        <li><strong>Representation of Deities:</strong> According to the Vedas, 33 crore (330 million) deities reside in the body of a cow.</li>
+                        <li><strong>Selfless Service:</strong> The cow gives milk even after her calf has been weaned, symbolizing unconditional giving.</li>
+                        <li><strong>Pañcagavya:</strong> The five products from cows (milk, curd, ghee, urine, and dung) have medicinal, spiritual, and practical applications.</li>
+                        <li><strong>Connection to Lord Kṛṣṇa:</strong> The cow is especially dear to Lord Kṛṣṇa, who is known as Govinda (one who gives pleasure to cows).</li>
+                    </ul>
+                </div>
+                <div class="deity-image">
+                    <img src="https://gavyajyoti.com/wp-content/uploads/2022/06/83161537381086-1024x740.jpg" alt="Krishna with Gau Mata">
+                </div>
+            </div>
+            
+            <h3>Ecological and Practical Benefits of Cow Protection</h3>
+            <p>Beyond spiritual significance, cow protection offers numerous ecological and practical benefits:</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://theorganicbite.com/cdn/shop/products/organicbite_750x.png?v=1691416082" alt="Organic Farming">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Sustainable Agriculture</h4>
+                        <p class="card-text">Cow dung is a natural fertilizer that enriches soil without the harmful effects of chemical fertilizers. One cow can produce approximately 12 tons of dung annually, which can fertilize about 4 acres of land.</p>
+                        <div class="scripture-ref">Vṛkṣāyurveda (ancient Indian plant science) texts recommend cow dung as the best natural fertilizer.</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://static.toiimg.com/thumb/msid-54878605,width-1070,height-580,imgsize-34488,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="Ayurvedic Medicine">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Medicinal Properties</h4>
+                        <p class="card-text">Cow urine (gomutra) contains over 95 medicinal compounds including copper, gold salts, and enzymes with anti-cancer, anti-bacterial, and anti-fungal properties. Ayurveda prescribes various cow-based medicines.</p>
+                        <div class="scripture-ref">Suśruta Saṁhitā and Caraka Saṁhitā (ancient Ayurvedic texts) mention numerous medicinal applications of pañcagavya.</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://img.khetivyapar.com/images/blogs/1704203486-biogas-2.jpg" alt="Biogas Production">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Renewable Energy</h4>
+                        <p class="card-text">Cow dung is an excellent source of biogas (methane), providing clean cooking fuel and electricity. One cow can produce enough biogas to fulfill the cooking needs of a family of four.</p>
+                        <div class="scripture-ref">Modern scientific research confirms what ancient texts implied about the energy potential of cow dung.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Spiritual and Environmental Consequences of Cow Protection</h3>
+            <p>The Padma Purāṇa states that killing a cow or allowing her to be killed is a grave sin. The Manusmṛti (11.109-118) prescribes severe penance for those who harm cows. From an ecological perspective:</p>
+            <ul>
+                <li>Indigenous cow breeds are perfectly adapted to local environments and require minimal resources</li>
+                <li>Cow-based farming reduces dependency on fossil fuels and chemical inputs</li>
+                <li>Protecting cows promotes biodiversity and sustainable agricultural practices</li>
+                <li>Cow protection encourages a lifestyle of simplicity and harmony with nature</li>
+            </ul>
+            
+            <div class="scripture-ref">
+                "The cow is the abode of all deities. The cow is the embodiment of the wish-fulfilling celestial tree (kāmadhenu)." — Mahābhārata, Anuśāsana Parva (80.3)
+            </div>
+        </section>
+        
+        <!-- Tulsi Maharani Section -->
+        <section id="tulsi" class="section">
+            <h2 class="section-title">Tulsi Maharani: The Sacred Plant of Divine Grace</h2>
+            
+            <div class="deity-section">
+                <div class="deity-image">
+                    <img src="https://i.ytimg.com/vi/J-Z6A_9ijco/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLC8qIR0mnXwvXY1gXLkbG-nyKf-sw" alt="Tulsi Maharani">
+                </div>
+                <div class="deity-content">
+                    <h3>The Divine Nature of Tulsi</h3>
+                    <p>Tulsi (Holy Basil) is not merely a plant but a manifestation of the goddess Vṛndā Devī, who is an expansion of Śrīmatī Rādhārāṇī. The Skanda Purāṇa declares: "Tulsi is auspicious in all respects. Simply by seeing, touching, meditating upon, bowing to, praying to, or offering simple water to Tulsi, one can be freed from all sins."</p>
+                    
+                    <p>According to the Padma Purāṇa, Tulsi appeared from the churning of the cosmic ocean (samudra-manthan) and was embraced by Lord Viṣṇu, making her especially dear to Him. No worship of Lord Viṣṇu or Kṛṣṇa is considered complete without the offering of Tulsi leaves.</p>
+                    
+                    <h3>Spiritual Significance</h3>
+                    <ul>
+                        <li><strong>Divine Connection:</strong> Tulsi creates a direct link between the devotee and Lord Kṛṣṇa.</li>
+                        <li><strong>Purification:</strong> Her presence purifies the atmosphere physically and spiritually.</li>
+                        <li><strong>Protection:</strong> Homes with Tulsi plants are protected from negative energies and calamities.</li>
+                        <li><strong>Liberation:</strong> The Padma Purāṇa states that one who departs this world with Tulsi leaves or wood on their body attains liberation.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>Ecological and Medicinal Benefits</h3>
+            <p>Beyond her spiritual significance, Tulsi offers remarkable ecological and medicinal benefits:</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://media.istockphoto.com/id/181593600/photo/herbal-medicine-concept.jpg?s=612x612&w=0&k=20&c=7swvy0Akl5-A3HdHRKryYMasXCZzTKKgm8DDekwSa44=" alt="Tulsi Medicinal">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Medicinal Powerhouse</h4>
+                        <p class="card-text">Tulsi contains eugenol, carvacrol, and other compounds with powerful anti-bacterial, anti-viral, and anti-fungal properties. Ayurveda prescribes Tulsi for respiratory disorders, fever, stress, and digestive issues.</p>
+                        <div class="scripture-ref">The Caraka Saṁhitā lists Tulsi among the foremost medicinal herbs for respiratory ailments.</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.deityworship.com/wp-content/uploads/2019/12/tulasi-care.jpg " alt="Tulsi Oxygen">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Environmental Purifier</h4>
+                        <p class="card-text">Tulsi releases oxygen for 20 hours a day and absorbs harmful gases like carbon monoxide, carbon dioxide, and sulfur dioxide. A single Tulsi plant can purify the air in an area of approximately 100 square feet.</p>
+                        <div class="scripture-ref">Modern scientific studies confirm what ancient texts implied about Tulsi's air-purifying properties.</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://thumbs.dreamstime.com/b/hindu-religious-rituals-woman-female-hand-holding-diya-giving-putting-near-sacred-tulsi-basil-plant-background-199501541.jpg?w=768" alt="Tulsi Worship">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Spiritual Ecology</h4>
+                        <p class="card-text">The tradition of worshiping and planting Tulsi has ensured the preservation of this valuable species for thousands of years. Tulsi cultivation promotes biodiversity by attracting beneficial insects and pollinators.</p>
+                        <div class="scripture-ref">The Tulsi Vivāha ceremony (marriage of Tulsi with Lord Viṣṇu) celebrated annually demonstrates the cultural importance of plant conservation in Sanatan Dharma.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Proper Ways to Honor Tulsi Maharani</h3>
+            <ul>
+                <li>Plant Tulsi in a clean, elevated place in your home or garden</li>
+                <li>Offer water daily and circumambulate the plant while chanting mantras</li>
+                <li>Never uproot or cut Tulsi after sunset or on specific prohibited days</li>
+                <li>Offer Tulsi leaves to Lord Kṛṣṇa with devotion and respect</li>
+                <li>Observe Tulsi Vivāha ceremony during the month of Kārtika</li>
+            </ul>
+            
+            <div class="scripture-ref">
+                "As Gaṅgā is among the rivers, Lord Acyuta (Kṛṣṇa) among the deities, and the Supreme Lord among all living beings, so Tulsi is the foremost among sacred plants." — Skanda Purāṇa
+            </div>
+        </section>
+        
+        <!-- Sacred Elements Section -->
+        <section id="elements" class="section">
+            <h2 class="section-title">Sacred Elements in Sanatan Dharma</h2>
+            
+            <p>Sanatan Dharma recognizes the divinity in all elements of nature. Here are some key aspects of sacred ecology in Hindu scriptures:</p>
+            
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h3>🌊 Sacred Rivers and Water Bodies</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>Rivers in Sanatan Dharma are not merely water bodies but divine goddesses. The Gangā, Yamunā, Sarasvatī, Narmadā, and other rivers are worshipped as manifestations of divine mothers.</p>
+                        
+                        <p><strong>Spiritual Significance:</strong></p>
+                        <ul>
+                            <li>The Gangā descended from the spiritual world to purify the earth (Bhāgavata Purāṇa 5.17)</li>
+                            <li>Bathing in sacred rivers removes sins and purifies consciousness</li>
+                            <li>Rivers represent the flow of divine grace and knowledge</li>
+                        </ul>
+                        
+                        <p><strong>Ecological Importance:</strong></p>
+                        <ul>
+                            <li>Traditional reverence for rivers prevented pollution and exploitation</li>
+                            <li>Sacred status ensured protection of entire river ecosystems</li>
+                            <li>River worship promotes water conservation consciousness</li>
+                        </ul>
+                        
+                        <div class="scripture-ref">
+                            "O Mother Gangā, your waters are the divine nectar that flowed when the toe of Lord Viṣṇu pierced the covering of the universe. You purify the three worlds and are the shelter of all living beings." — Skanda Purāṇa
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h3>🌳 Sacred Trees and Forests</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>Trees and forests hold a special place in Sanatan Dharma. The concept of sacred groves (dev-vans) has been instrumental in forest conservation for millennia.</p>
+                        
+                        <p><strong>Divine Trees:</strong></p>
+                        <ul>
+                            <li><strong>Peepal (Aśvattha):</strong> Represents the Trimūrti—Brahmā at the roots, Viṣṇu in the trunk, and Śiva in the branches</li>
+                            <li><strong>Banyan (Vaṭa):</strong> Symbolizes Lord Kṛṣṇa and eternal life</li>
+                            <li><strong>Neem (Nimba):</strong> Associated with Goddess Śītalā, known for medicinal properties</li>
+                            <li><strong>Amla (Āmalakī):</strong> Considered a manifestation of Goddess Lakṣmī</li>
+                        </ul>
+                        
+                        <p><strong>Ecological Impact:</strong></p>
+                        <ul>
+                            <li>Sacred groves preserved biodiversity hotspots across India</li>
+                            <li>Religious taboos against cutting certain trees protected old-growth forests</li>
+                            <li>Tree worship ceremonies like Vaṭa Sāvitrī promote conservation</li>
+                        </ul>
+                        
+                        <div class="scripture-ref">
+                            "One who plants and nurtures five mango trees, ten flowering trees, two pomegranate trees, a peepal tree, and a neem tree never goes to hell." — Vṛkṣāyurveda
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h3>🏔️ Sacred Mountains</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>Mountains in Sanatan Dharma are revered as the abodes of deities and centers of spiritual energy. The Himalayas are considered the abode of Lord Śiva.</p>
+                        
+                        <p><strong>Spiritual Significance:</strong></p>
+                        <ul>
+                            <li>Mount Kailāsa is the sacred abode of Lord Śiva and Goddess Pārvatī</li>
+                            <li>Mount Govardhan was lifted by Lord Kṛṣṇa and is worshipped as His non-different form</li>
+                            <li>Mountains represent stability, strength, and spiritual ascension</li>
+                        </ul>
+                        
+                        <p><strong>Ecological Protection:</strong></p>
+                        <ul>
+                            <li>Sacred status prevented mining and exploitation of mountain ecosystems</li>
+                            <li>Pilgrimage traditions maintained biodiversity in mountain regions</li>
+                            <li>Mountains as sacred geography created protected ecological zones</li>
+                        </ul>
+                        
+                        <div class="scripture-ref">
+                            "As Meru among mountains, I am the Himalayas." — Lord Kṛṣṇa in Bhagavad Gītā (10.23)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h3>🌱 Sacred Seeds and Agriculture</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p>Agriculture in Sanatan Dharma is not merely a profession but a sacred duty. Seeds are considered manifestations of the goddess Lakṣmī, the deity of prosperity.</p>
+                        
+                        <p><strong>Spiritual Practices:</strong></p>
+                        <ul>
+                            <li>Bīja-mantra (seed mantras) are chanted before sowing</li>
+                            <li>Harvest festivals like Pongal, Baisakhi, and Onam express gratitude to nature</li>
+                            <li>First harvests are offered to deities before consumption</li>
+                        </ul>
+                        
+                        <p><strong>Sustainable Agriculture:</strong></p>
+                        <ul>
+                            <li>Traditional farming followed lunar cycles and natural rhythms</li>
+                            <li>Crop rotation and mixed cropping preserved soil fertility</li>
+                            <li>Seed saving was a sacred duty, preserving biodiversity</li>
+                        </ul>
+                        
+                        <div class="scripture-ref">
+                            "The earth is the divine mother who sustains all beings. One who respects her by practicing sustainable agriculture gains her blessings." — Kṛṣi-Parāśara
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quiz Section -->
+        <section id="quiz" class="section">
+            <h2 class="section-title">Sacred Ecology Knowledge Quiz</h2>
+            
+            <p>Test your understanding of Sacred Ecology in Sanatan Dharma with this quiz. Each correct answer brings you closer to divine wisdom!</p>
+            
+            <div class="quiz-container">
+                <div class="question-box">
+                    <p>1. According to the Bhagavad Gītā, Lord Kṛṣṇa declares Himself to be:</p>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="1"> The source of only the spiritual world
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="2"> The source of all spiritual and material worlds
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="3"> Only the protector of cows
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>2. Which Purāṇa states that there is no other means for self-realization in Kali-yuga than chanting the holy name?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="1"> Bhāgavata Purāṇa
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="2"> Bṛhan-nāradīya Purāṇa
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="3"> Padma Purāṇa
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>3. According to Vedic scriptures, how many deities reside in the body of a cow?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="1"> 33 thousand
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="2"> 33 million
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="3"> 330 million (33 crore)
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>4. Which of the following is NOT one of the five products (pañcagavya) obtained from cows?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="1"> Milk
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="2"> Blood
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="3"> Urine
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>5. According to the Skanda Purāṇa, Tulsi is especially dear to which deity?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="1"> Lord Śiva
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="2"> Lord Viṣṇu/Kṛṣṇa
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="3"> Lord Brahmā
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>6. For approximately how many hours does Tulsi release oxygen in a day?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="1"> 12 hours
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="2"> 20 hours
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="3"> 24 hours
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>7. Which river is described as having descended from the spiritual world to purify the earth?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="1"> Yamunā
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="2"> Gangā
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="3"> Sarasvatī
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>8. Which tree represents the Trimūrti (Brahmā, Viṣṇu, and Śiva) according to Sanatan Dharma?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="1"> Peepal (Aśvattha)
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="2"> Banyan (Vaṭa)
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="3"> Neem (Nimba)
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>9. What is the name of the mountain lifted by Lord Kṛṣṇa to protect the residents of Vṛndāvana?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="1"> Mount Kailāsa
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="2"> Mount Meru
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="3"> Mount Govardhan
+                    </label>
+                </div>
+                
+                <div class="question-box">
+                    <p>10. Which of these is a key ecological benefit of cow protection?</p>
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="1"> Increased meat production
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="2"> Sustainable organic agriculture
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="3"> Higher milk yields through genetic modification
+                    </label>
+                </div>
+                
+                <button id="submitQuiz" class="btn btn-large">Submit Answers</button>
+                
+                <div id="resultBox" class="result-box">
+                    <h3>Your Quiz Results</h3>
+                    <div class="result-score" id="score"></div>
+                    <p class="result-message" id="message"></p>
+                    <button id="retakeQuiz" class="btn btn-secondary">Retake Quiz</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>🌺 Sacred Ecology in Sanatan Dharma 🌺</h3>
+            <p class="footer-mantra">Hare Kṛṣṇa Hare Kṛṣṇa Kṛṣṇa Kṛṣṇa Hare Hare<br>Hare Rāma Hare Rāma Rāma Rāma Hare Hare</p>
+            <p class="footer-quote">"The Earth is not to be exploited but to be protected. She is our mother, and we are her children." — Atharva Veda</p>
+            <p>By understanding and practicing the principles of Sacred Ecology in Sanatan Dharma, we can restore harmony between humanity and nature.</p>
+        </div>
+    </footer>
+
+    <!-- Permission Overlay -->
+    <div id="permissionOverlay" class="permission-overlay">
+        <div class="permission-box">
+            <h3>Audio Permission Required</h3>
+            <p>To play the sacred Mahā-Mantra, we need your permission to play audio. Please click "Allow" to experience the divine vibrations.</p>
+            <div class="permission-buttons">
+                <button id="allowAudio" class="btn btn-secondary">Allow</button>
+                <button id="cancelAudio" class="btn">Not Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-container').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-container a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-container').classList.remove('active');
+            });
+        });
+        
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const accordion = header.parentElement;
+                const content = accordion.querySelector('.accordion-content');
+                
+                // Toggle active class
+                accordion.classList.toggle('active');
+                
+                // Toggle content visibility
+                if (accordion.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = null;
+                }
+            });
+        });
+        
+        // Mantra audio setup
+        const mantraAudio = new Audio('videoplayback.m4a');
+        mantraAudio.loop = true;
+        
+        // Check if audio permission has been granted before
+        let audioPermissionGranted = localStorage.getItem('audioPermissionGranted') === 'true';
+        
+        // Permission overlay elements
+        const permissionOverlay = document.getElementById('permissionOverlay');
+        const allowAudioBtn = document.getElementById('allowAudio');
+        const cancelAudioBtn = document.getElementById('cancelAudio');
+        
+        // Play/Pause button and message elements
+        const playMantraBtn = document.getElementById('playMantra');
+        const audioMessage = document.getElementById('audioMessage');
+        
+        // Function to play audio with permission handling
+        function playAudio() {
+            if (audioPermissionGranted) {
+                mantraAudio.play()
+                    .then(() => {
+                        playMantraBtn.textContent = '⏸️ Pause Mantra';
+                        audioMessage.textContent = '🎶 Divine vibrations are purifying the atmosphere!';
+                        audioMessage.style.display = 'block';
+                    })
+                    .catch(error => {
+                        // If there's an error despite permission, show the overlay
+                        permissionOverlay.style.display = 'flex';
+                        console.error("Audio playback failed:", error);
+                    });
+            } else {
+                // Show permission overlay
+                permissionOverlay.style.display = 'flex';
+            }
+        }
+        
+        // Play Mantra button click handler
+        playMantraBtn.addEventListener('click', function() {
+            if (mantraAudio.paused) {
+                playAudio();
+            } else {
+                mantraAudio.pause();
+                playMantraBtn.textContent = '🎵 Play Mantra';
+                audioMessage.textContent = 'Mantra paused. Click to resume the divine vibrations.';
+            }
+        });
+        
+        // Allow audio button click handler
+        allowAudioBtn.addEventListener('click', function() {
+            audioPermissionGranted = true;
+            localStorage.setItem('audioPermissionGranted', 'true');
+            permissionOverlay.style.display = 'none';
+            
+            // Try to play the audio
+            mantraAudio.play()
+                .then(() => {
+                    playMantraBtn.textContent = '⏸️ Pause Mantra';
+                    audioMessage.textContent = '🎶 Divine vibrations are purifying the atmosphere!';
+                    audioMessage.style.display = 'block';
+                })
+                .catch(error => {
+                    audioMessage.textContent = 'Please interact with the page first to enable audio.';
+                    audioMessage.style.display = 'block';
+                    console.error("Audio playback failed:", error);
+                });
+        });
+        
+        // Cancel audio button click handler
+        cancelAudioBtn.addEventListener('click', function() {
+            permissionOverlay.style.display = 'none';
+            audioMessage.textContent = 'Audio permission denied. Click Play Mantra again to grant permission.';
+            audioMessage.style.display = 'block';
+        });
+        
+        // Quiz functionality
+        const correctAnswers = {
+            q1: '2',
+            q2: '2',
+            q3: '3',
+            q4: '2',
+            q5: '2',
+            q6: '2',
+            q7: '2',
+            q8: '1',
+            q9: '3',
+            q10: '2'
+        };
+        
+        document.getElementById('submitQuiz').addEventListener('click', function() {
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            
+            // Check each question
+            for (const [question, answer] of Object.entries(correctAnswers)) {
+                const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+                
+                if (selectedOption && selectedOption.value === answer) {
+                    score++;
+                }
+            }
+            
+            // Calculate percentage
+            const percentage = Math.round((score / totalQuestions) * 100);
+            
+            // Display result
+            const resultBox = document.getElementById('resultBox');
+            const scoreElement = document.getElementById('score');
+            const messageElement = document.getElementById('message');
+            
+            scoreElement.textContent = `${score}/${totalQuestions} (${percentage}%)`;
+            
+            // Set message based on score
+            if (percentage >= 80) {
+                messageElement.textContent = 'Excellent! You have a deep understanding of Sacred Ecology in Sanatan Dharma. May Lord Kṛṣṇa bless you with more spiritual knowledge!';
+                scoreElement.style.color = 'green';
+            } else if (percentage >= 60) {
+                messageElement.textContent = 'Good effort! You have a solid foundation in Sacred Ecology. Continue chanting the Mahā-Mantra for deeper insights!';
+                scoreElement.style.color = 'var(--primary)';
+            } else {
+                messageElement.textContent = 'Keep learning! The path of spiritual ecology is endless. Read more about Sanatan Dharma and try again!';
+                scoreElement.style.color = 'var(--accent)';
+            }
+            
+            // Show result box with animation
+            resultBox.style.display = 'block';
+            
+            // Scroll to result
+            resultBox.scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Retake quiz
+        document.getElementById('retakeQuiz').addEventListener('click', function() {
+            // Clear all selections
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.checked = false;
+            });
+            
+            // Hide result box
+            document.getElementById('resultBox').style.display = 'none';
+            
+            // Scroll to top of quiz
+            document.querySelector('.quiz-container').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add animation to sections when they come into view
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Initially set sections to be invisible
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
